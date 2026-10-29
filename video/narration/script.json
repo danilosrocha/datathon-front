@@ -1,0 +1,31 @@
+{
+  "voice": "Luciana",
+  "rate": 172,
+  "elevenlabs": {
+    "voiceId": "6XyfROyCuZUIzLLbClxY",
+    "model": "eleven_multilingual_v2",
+    "voiceSettings": { "stability": 0.5, "similarity_boost": 1.0, "style": 0, "use_speaker_boost": true }
+  },
+  "lines": [
+    { "id": "n01", "cut": "full", "start": 1.2, "text": "Você construiu seu negócio com esforço. Mas, se algo acontecer amanhã, o que o mantém de pé?" },
+    { "id": "n02", "cut": "full", "start": 12.6, "text": "Proteger uma empresa não deveria exigir que o empreendedor fosse especialista em seguros." },
+    { "id": "n03", "cut": "full", "start": 23.4, "text": "Apresentamos o Negócio de Pé. Uma nova experiência para descobrir a proteção que faz sentido para cada empresa." },
+    { "id": "n04", "cut": "full", "start": 35.0, "text": "Em vez de um formulário interminável, uma conversa simples, que se adapta ao seu negócio." },
+    { "id": "n04b", "cut": "full", "start": 44.0, "text": "E cada pergunta explica por que está sendo feita." },
+    { "id": "n05", "cut": "full", "start": 50.2, "text": "Com poucos dados, reunimos informações disponíveis e identificamos riscos relevantes para aquela região." },
+    { "id": "n05b", "cut": "full", "start": 59.4, "text": "Tudo o que é estimativa aparece marcado como estimado." },
+    { "id": "n06", "cut": "full", "start": 68.4, "text": "E você sabe exatamente o que foi confirmado, o que veio de uma fonte e o que ainda precisa validar." },
+    { "id": "n06b", "cut": "full", "start": 76.4, "text": "Você sempre tem a palavra final." },
+    { "id": "n07", "cut": "full", "start": 83.4, "text": "A inteligência artificial conduz a conversa. Mas são as regras de negócio que determinam elegibilidade e coberturas." },
+    { "id": "n08", "cut": "full", "start": 95.6, "text": "No final, você recebe opções organizadas para o seu perfil, com mais clareza para tomar uma decisão." },
+    { "id": "n09", "cut": "full", "start": 109.4, "text": "Negócio de Pé. Porque proteger seu negócio começa por entender o que realmente importa." },
+
+    { "id": "s01", "cut": "short", "start": 0.8, "text": "Se algo acontecer amanhã, o que mantém o seu negócio de pé?" },
+    { "id": "s03", "cut": "short", "start": 7.6, "text": "Conheça o Negócio de Pé: uma conversa simples, que entende o seu negócio." },
+    { "id": "s05", "cut": "short", "start": 14.2, "text": "Com poucos dados, reunimos informações disponíveis e identificamos riscos da região, sempre marcados como estimativa." },
+    { "id": "s06", "cut": "short", "start": 28.8, "text": "Você vê o que foi confirmado, o que veio de uma fonte e o que ainda precisa validar. A palavra final é sua." },
+    { "id": "s07", "cut": "short", "start": 39.3, "text": "A inteligência artificial conduz a conversa. As regras de negócio decidem elegibilidade e coberturas." },
+    { "id": "s08", "cut": "short", "start": 47.8, "text": "No final, opções organizadas para o seu perfil." },
+    { "id": "s09", "cut": "short", "start": 53.8, "text": "Negócio de Pé. Seu negócio merece continuar de pé." }
+  ]
+}

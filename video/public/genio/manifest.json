@@ -1,0 +1,76 @@
+{
+  "personagem": "Gênio BB",
+  "tipo": "frames individuais em alta resolução",
+  "canvas": {
+    "width": 1600,
+    "height": 1100
+  },
+  "format": "PNG RGBA transparente",
+  "fps_sugerido": 12,
+  "observacoes": "Frames com movimento sutil gerados por deformação 2D das ilustrações originais de 1536×1024; não é rigging de membros nem redesenho quadro a quadro.",
+  "animacoes": [
+    {
+      "id": "01_flutuando",
+      "frames": 12,
+      "prefixo": "01_flutuando/frame_",
+      "duracao_s_sugerida": 1.2,
+      "loop": true,
+      "arquivo_origem": "esperandoresposta-recorte.webp",
+      "descricao": "Gênio flutua com pequenos movimentos de cauda e pena."
+    },
+    {
+      "id": "02_acenando",
+      "frames": 12,
+      "prefixo": "02_acenando/frame_",
+      "duracao_s_sugerida": 1.0,
+      "loop": true,
+      "arquivo_origem": "recepcao-transparente.webp",
+      "descricao": "Aceno sutil, movimento do braço e flutuação."
+    },
+    {
+      "id": "03_pensando",
+      "frames": 12,
+      "prefixo": "03_pensando/frame_",
+      "duracao_s_sugerida": 1.4,
+      "loop": true,
+      "arquivo_origem": "pensativo-transparente.webp",
+      "descricao": "Reflexão, olhar e flutuação; lâmpada pulsante."
+    },
+    {
+      "id": "04_ideia",
+      "frames": 12,
+      "prefixo": "04_ideia/frame_",
+      "duracao_s_sugerida": 1.3,
+      "loop": true,
+      "arquivo_origem": "ideia-transparente.webp",
+      "descricao": "Expressão de ideia com brilho pulsante da lâmpada."
+    },
+    {
+      "id": "05_apresentando",
+      "frames": 12,
+      "prefixo": "05_apresentando/frame_",
+      "duracao_s_sugerida": 1.2,
+      "loop": true,
+      "arquivo_origem": "apresentacao-recorte.webp",
+      "descricao": "Movimento dos braços e apresentação dos benefícios."
+    },
+    {
+      "id": "06_comemorando",
+      "frames": 12,
+      "prefixo": "06_comemorando/frame_",
+      "duracao_s_sugerida": 0.95,
+      "loop": true,
+      "arquivo_origem": "conclusao-recorte.webp",
+      "descricao": "Comemoração com impulso e oscilação dos braços."
+    },
+    {
+      "id": "07_coberturas",
+      "frames": 12,
+      "prefixo": "07_coberturas/frame_",
+      "duracao_s_sugerida": 1.25,
+      "loop": true,
+      "arquivo_origem": "conclusaodaideia-transparente.webp",
+      "descricao": "Apresentação de coberturas com cards flutuantes."
+    }
+  ]
+}

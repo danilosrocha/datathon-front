@@ -1,0 +1,28 @@
+{
+  "name": "negocio-de-pe-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "capture": "node capture/capture.mjs",
+    "narration": "node scripts/narration.mjs",
+    "narration:eleven": "node scripts/narration-eleven.mjs",
+    "audio": "node scripts/synth-audio.mjs",
+    "render": "remotion render src/index.ts NegocioDePe out/negocio-de-pe-120s.mp4 --codec h264 --crf 18",
+    "render:short": "remotion render src/index.ts NegocioDePe60 out/negocio-de-pe-60s.mp4 --codec h264 --crf 18"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.367",
+    "@remotion/google-fonts": "4.0.367",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.367"
+  },
+  "devDependencies": {
+    "@remotion/bundler": "4.0.367",
+    "@remotion/renderer": "4.0.367",
+    "@types/react": "19.1.12",
+    "playwright": "1.56.1",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "01-home": {
+    "duration": 11.271,
+    "cursor": 2.352,
+    "click": 3.674,
+    "consent": 3.679,
+    "checked": 6.495,
+    "start-chat": 8.013,
+    "first-question": 9.716
+  },
+  "02-atividade": {
+    "duration": 13.018,
+    "answer": 1.688,
+    "next-question": 2.6,
+    "name-sent": 6.717,
+    "cep-question": 7.428,
+    "why-open": 9.155,
+    "why-close": 12.365
+  },
+  "03-cep": {
+    "duration": 11.079,
+    "typed": 2.705,
+    "submit": 4.1,
+    "municipio": 4.897,
+    "riscos": 6.226,
+    "next-question": 6.721,
+    "cards-visible": 8.325
+  },
+  "04-estoque": {
+    "duration": 21.119,
+    "obra": 2.235,
+    "estoque-question": 4.019,
+    "estoque-sim": 5.484,
+    "estimado": 6.283,
+    "card-open": 10.161,
+    "corrigir": 14.211,
+    "confirmado": 16.298,
+    "confirmado-visible": 18.367
+  },
+  "05-recomendacao": {
+    "duration": 13.423,
+    "last-answer": 1.599,
+    "analysis": 2.402,
+    "offers": 7.221,
+    "scroll": 9.872
+  }
+}

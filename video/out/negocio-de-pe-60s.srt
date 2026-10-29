@@ -1,0 +1,63 @@
+1
+00:00:00,800 --> 00:00:02,341
+Se algo acontecer amanhã,
+
+2
+00:00:02,341 --> 00:00:04,376
+o que mantém o seu negócio de pé?
+
+3
+00:00:07,600 --> 00:00:10,003
+Conheça o Negócio de Pé: uma conversa simples,
+
+4
+00:00:10,003 --> 00:00:11,362
+que entende o seu negócio.
+
+5
+00:00:14,200 --> 00:00:15,350
+Com poucos dados,
+
+6
+00:00:15,350 --> 00:00:17,514
+reunimos informações disponíveis
+
+7
+00:00:17,514 --> 00:00:19,745
+e identificamos riscos da região,
+
+8
+00:00:19,745 --> 00:00:21,909
+sempre marcados como estimativa.
+
+9
+00:00:28,800 --> 00:00:30,955
+Você vê o que foi confirmado,
+
+10
+00:00:30,955 --> 00:00:34,967
+o que veio de uma fonte e o que ainda precisa validar.
+
+11
+00:00:34,967 --> 00:00:36,602
+A palavra final é sua.
+
+12
+00:00:39,300 --> 00:00:42,712
+A inteligência artificial conduz a conversa.
+
+13
+00:00:42,712 --> 00:00:47,055
+As regras de negócio decidem elegibilidade e coberturas.
+
+14
+00:00:47,800 --> 00:00:50,633
+No final, opções organizadas para o seu perfil.
+
+15
+00:00:53,800 --> 00:00:54,782
+Negócio de Pé.
+
+16
+00:00:54,782 --> 00:00:57,237
+Seu negócio merece continuar de pé.
