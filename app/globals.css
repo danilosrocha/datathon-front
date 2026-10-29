@@ -1,0 +1,190 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* Só tema claro: `dark:` dos componentes shadcn exige a classe .dark (nunca aplicada). */
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Tokens do sistema "Proteção Azul & Amarelo" (ver DESIGN.md).
+ * Escala de marca em @theme; papéis semânticos (shadcn) em :root.
+ * O produto é só tema claro; seções escuras usam a classe .surface-dark.
+ */
+
+@theme {
+  --color-brand-50: #f9f7ff;
+  --color-brand-100: #e5e8ff;
+  --color-brand-200: #c6ceff;
+  --color-brand-300: #9ca9ff;
+  --color-brand-500: #5a6fff;
+  --color-brand-600: #465eff;
+  --color-brand-700: #3751ff;
+  --color-brand-800: #1f3bc4;
+  --color-brand-900: #003087;
+  --color-brand-950: #001f5c;
+
+  --color-sun-400: #fcee4f;
+  --color-sun-500: #fcfc30;
+  --color-mint-400: #6aedd3;
+  --color-coral-400: #ff6f68;
+
+  --color-ink-500: #656565;
+  --color-ink-600: #4c4c4c;
+  --color-ink-800: #212529;
+  --color-ink-900: #121212;
+
+  --container-page: 1180px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-highlight: var(--highlight);
+  --color-highlight-foreground: var(--highlight-foreground);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: var(--color-ink-800);
+  --card: #ffffff;
+  --card-foreground: var(--color-ink-800);
+  --popover: #ffffff;
+  --popover-foreground: var(--color-ink-800);
+  /* #5A6FFF: cor primária da marca */
+  --primary: var(--color-brand-500);
+  --primary-foreground: #ffffff;
+  --secondary: var(--color-brand-100);
+  --secondary-foreground: var(--color-brand-900);
+  --muted: var(--color-brand-50);
+  --muted-foreground: var(--color-ink-600);
+  --accent: var(--color-brand-50);
+  --accent-foreground: var(--color-brand-900);
+  --highlight: var(--color-sun-400);
+  --highlight-foreground: var(--color-brand-900);
+  --destructive: #d92d20;
+  --border: #e3e5ee;
+  --input: #d3d7e6;
+  --ring: var(--color-brand-500);
+  --radius: 0.5rem;
+}
+
+@keyframes avatar-blink {
+  0%,
+  93%,
+  100% {
+    transform: scaleY(1);
+  }
+  96% {
+    transform: scaleY(0.1);
+  }
+}
+
+@keyframes avatar-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015) translateY(-0.4px);
+  }
+}
+
+/* Seções com fundo azul: foco e bordas passam para amarelo/translúcido. */
+.surface-dark {
+  --ring: var(--color-sun-400);
+  --border: rgb(255 255 255 / 0.16);
+  --muted-foreground: var(--color-brand-100);
+  color: #ffffff;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: clip;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-heading tracking-[-0.01em] text-balance;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  ::selection {
+    background: var(--color-sun-400);
+    color: var(--color-brand-900);
+  }
+}
+
+@layer utilities {
+  .container-page {
+    width: 100%;
+    max-width: var(--container-page);
+    margin-inline: auto;
+    padding-inline: 1rem;
+    @media (width >= 48rem) {
+      padding-inline: 1.5rem;
+    }
+  }
+  /* Avatar da assistente: piscar e respirar só sem prefers-reduced-motion. */
+  @media (prefers-reduced-motion: no-preference) {
+    .avatar-eyes {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: avatar-blink 5.5s infinite;
+    }
+    .avatar[data-state="ouvindo"] .avatar-body {
+      transform-origin: 50% 100%;
+      animation: avatar-breathe 4s ease-in-out infinite;
+    }
+  }
+  /* Efeito "marca-texto" do DESIGN.md §6.3 */
+  .marker {
+    background: linear-gradient(
+      to top,
+      var(--color-sun-400) 0 0.38em,
+      transparent 0.38em
+    );
+    padding-inline: 0.08em;
+    box-decoration-break: clone;
+  }
+}
